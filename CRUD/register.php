@@ -1,0 +1,24 @@
+
+<html>
+<head>
+    <title>Form </title>
+</head>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+    <h1>Registration Form</h1>
+    <form method="POST" action="insert.php">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+		
+		<label for="name">Place:</label>
+        <input type="text" name="place" id="place" required><br><br>
+
+		<input type="submit" name="submit" value="Submit">
+    </form>
+	<a href="viewdata.php">View Data</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?php
+include "dbconnection.php";
+
+
+if (isset($_POST['submit'])) 
+{
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+	$place = $_POST['place'];
+	$data = array('name'=>$name,'place'=>$place,'email'=>$email);
+	if($data)
+	{
+	   $collection->insertOne($data);
+       echo "<script type='text/javascript'>alert('Data Inserted Succesfully');</script>";	
+	  
+       //header("Location: register.php");	
+       //exit();	   
+	}
+}
+?>
